@@ -46,8 +46,9 @@ h3 {
     color: #cecece;
 }
 
-.search__input:focus, .search__input:hover {
-    border: 2px solid rgb(128, 189, 255);
+.search__input:focus {
+        outline: none;
+        border: 2px solid rgb(128, 189, 255);
 }
 
 .search__btn {
@@ -56,12 +57,41 @@ h3 {
     border-radius: 0 4px 4px 0;
     color: #fff;
     margin-left: -4px;
+    cursor: pointer;
+}
+
+.search__btn:focus {
+    outline: none;
+}
+
+
+aside {
+    background-color: rgb(33, 37, 41);
+    float: left;
+    position: relative;
+    top: -20px;
+    padding: 30px 20px 100px;
 }
 
 .main__naiv {
-    
+
 }
 
 .nav__ul {
     list-style-type: none;
+    padding: 0;
+}
+
+.nav__ul li {
+    color: #fff;
+}
+
+.nav__ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 4rem;
+}
+
+.fa-tachometer:before, .fa-windows:before, .fa-bookmark:before, .fa-area-chart:before, .fa-table:before {
+    margin-right: 10px;
 }
