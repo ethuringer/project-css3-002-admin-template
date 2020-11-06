@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -64,32 +68,43 @@ h3 {
     outline: none;
 }
 
+.container {
+    display: flex;
+    height: 100%;
+}
 
 aside {
     background-color: rgb(33, 37, 41);
-    float: left;
     position: relative;
-    top: -20px;
     padding: 30px 20px 100px;
+    width: 20%;
 }
 
-
+.nav__ul h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #979797;
+}
 
 .nav__ul {
     list-style-type: none;
     padding: 0;
 }
 
-.nav__ul li {
-    color: #fff;
-}
-
 .nav__ul li a {
-    color: #fff;
     text-decoration: none;
     line-height: 4rem;
+}
+
+.link {
+    color: #979797;
+}
+
+.link__active {
+    color: #fff;
 }
 
 .fa-tachometer:before, .fa-windows:before, .fa-bookmark:before, .fa-area-chart:before, .fa-table:before {
     margin-right: 10px;
 }
+
