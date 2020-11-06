@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css\font-awesome-4.7.0\css\font-awesome.min.css">
 </head>
 <body>
-    
+    <header class="header--dark">
+        <h3 class="header__title">
+            Admin Page
+        </h3>
+    <div class="header__search">
+        <input type="text" class="search__input">
+        <button class="search__button"><i class="fa fa-search"></i></button>
+    </div>
+    </header>
+    <main>
+        <aside>
+            <nav class="main__naiv">
+                <ul class="nav__ul">
+                    <li><h4>Core</h4></li>
+                    <li><a class="active" href="#"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                    <li><h4>Interface</h4></li>
+                    <li><a href="#"><i class="fa fa-windows"></i>Layouts</a></li>
+                    <li><a href="#"><i class="fa fa-bookmark"></i>Pages</a></li>
+                    <li><h4>Addons</h4></li>
+                    <li><a href="#"><i class="fa fa-area-chart"></i>Charts</a></li>
+                    <li><a href="#"><i class="fa fa-table"></i>Tables</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">
+                <p class="title__breadcrumb">Dashboard</p>
+            </div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">
+                        <h5>Primary Card</h5>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__more">View Details</p>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">
+                        <h5>Warning Card</h5>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__more">View Details</p>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">
+                        <h5>Success Card</h5>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__more">View Details</p>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="main__card main__card--red">
+                    <div class="card__top">
+                        <h5>Danger Card</h5>
+                    </div>
+                    <div class="card__bottom">
+                        <p class="card__more">View Details</p>
+                        <a href="#"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
