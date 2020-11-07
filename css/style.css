@@ -108,3 +108,9 @@ aside {
     margin-right: 10px;
 }
 
+.link .fa-angle-right {
+    position: absolute;
+    margin-top: 25px;
+    right: 15px;
+}
+
