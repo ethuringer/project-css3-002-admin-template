@@ -24,14 +24,6 @@ html, body {
     --main__card--red: rgb(220, 53, 69);
 }
 
-.header--dark {
-    background-color: rgb(51, 57, 64);
-    color: rgb(236, 236, 236);
-    height: 5rem;
-    line-height: 5rem;
-    padding: 0 2rem;
-}
-
 h1 {
     font-size: 3rem;
 }
@@ -45,11 +37,60 @@ h3 {
     display: inline;
     font-size: 1.25rem;
     font-weight: 400;
+    margin-right: 5%;
+}
+
+.header--dark {
+    background-color: rgb(51, 57, 64);
+    color: rgb(236, 236, 236);
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.menu__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+}
+
+.fa-bars {
+    color: #979797;
+}
+
+.fa-bars:before {
+    font-size: 1.2rem;
+}
+
+.fa-user {
+    margin-right: 0.5rem;
+}
+
+.fa-sort-down {
+    padding-bottom: 0.5rem;
+}
+
+.fa-user:before, .fa-sort-down:before {
+    font-size: 1.4rem;
+    color: #979797;
+}
+
+.menu__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+    justify-content: flex-end;
 }
 
 .header__search {
     display: inline;
-    float: right;
+    margin-right: 2rem;
 }
 
 .search__input, .search__btn {
@@ -59,7 +100,7 @@ h3 {
 }
 
 .search__input {
-    border: solid 2px #cecece;
+    border: solid 2px #979797;
     border-radius: 4px 0 0 4px;
     -webkit-transition: border 0.15s linear;
     transition: border 0.15s linear;
@@ -115,6 +156,9 @@ aside {
 
 .link {
     color: #979797;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .link__active {
@@ -127,9 +171,8 @@ aside {
 
 .link .fa-angle-right {
     position: absolute;
-    margin-top: 25px;
     right: 1rem;
-}
+} 
 
 .content {
     padding: 0 2rem;
