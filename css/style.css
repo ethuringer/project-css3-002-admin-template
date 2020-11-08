@@ -37,7 +37,6 @@ h3 {
     display: inline;
     font-size: 1.25rem;
     font-weight: 400;
-    margin-right: 5%;
 }
 
 .header--dark {
@@ -56,7 +55,8 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 30%;
+    justify-content: space-between;
+    width: 20%;
 }
 
 .fa-bars {
@@ -84,7 +84,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 70%;
+    width: 80%;
     justify-content: flex-end;
 }
 
@@ -125,6 +125,15 @@ h3 {
     outline: none;
 }
 
+@media screen and (max-width: 768px) {
+    .menu__left {
+        width: 100%;
+}
+.header__search {
+    display: none;
+}
+}
+
 .container {
     display: flex;
     height: 100%;
@@ -135,7 +144,6 @@ aside {
     background-color: rgb(33, 37, 41);
     position: relative;
     padding: 30px 20px 100px;
-    width: 15%;
 }
 
 .nav__ul h5 {
@@ -177,7 +185,7 @@ aside {
 .content {
     padding: 0 2rem;
     position: relative;
-    width: 85%;
+    width: 82%;
 }
 
 .content h1 {
@@ -208,6 +216,15 @@ aside {
     width: 25%;
     color: #fff;
     margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .main__cards {
+        flex-direction: column;
+}
+    .main__card {
+        width: 100%;
+}
 }
 
 .main__card--blue, .main__card--yellow, .main__card--green {
